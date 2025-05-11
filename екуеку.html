@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЦЕНТР</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+
+    header {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff0000, #000000);
+      background-size: 400% 400%;
+      animation: bgShift 10s ease infinite;
+    }
+
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .logo-link img {
+      height: 80px;
+      cursor: pointer;
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .logo-link:hover img {
+      filter: brightness(1.5) saturate(1.5);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://www.google.com/maps/place/Печерский+район,+Киев,+Украина,+02000/@50.4296987,30.5109893,12549m/data=!3m2!1e3!4b1!4m6!3m5!1s0x40d4cf0b371a3ecd:0x7b942a840e62e26c!8m2!3d50.4198006!4d30.560858!16zL20vMDVkOGpt?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" class="logo-link">
+      <img src="cooltext480977406820534.gif" alt="ЦЕНТР">
+    </a>
+  </header>
+</body>
+</html>
